@@ -149,7 +149,7 @@ Actualmente busco una oportunidad de prácticas para aportar mis habilidades, se
 
       <section className="relative z-10 p-10 max-w-6xl mx-auto">
         <h3 className="text-3xl font-bold text-center mb-8">Proyectos</h3>
-        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-10">
+        <div className="grid sm:grid-cols-1 md:grid-cols-2 gap-5">
           {projects.map((proj, i) => (
             <motion.div
               key={i}
@@ -158,7 +158,7 @@ Actualmente busco una oportunidad de prácticas para aportar mis habilidades, se
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <img src={proj.image} alt={proj.title} className="w-full h-74 object-cover" />
+              <img src={proj.image} alt={proj.title} className="w-full h-100 md:h-74 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/70 to-transparent" />
               <div className="absolute bottom-0 text-white p-5 z-10">
                 <h4 className="text-xl font-bold mb-1">{proj.title}</h4>
